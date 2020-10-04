@@ -18,7 +18,7 @@ use this soap service.
     III. Configure the "CallbackHandler" as UTPasswordCallBack class. Implement "handle(Callback[] callbacks)" method from CallbackHandler (interface) to 
     autheticate the username in the request from in-memory database. 
 
-3. SOAP UI Testing: Add the following <wsse:security> tag in the request <soapenv:Header>. Otherwise the serice will return <soap:Fault>. 
+3. SOAP UI Testing: Add the following <wsse:security> tag in the request <soapenv:Header>. Otherwise the service will return <soap:Fault>. 
 
  <soapenv:Header>
     <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soapenv:mustUnderstand="1">
